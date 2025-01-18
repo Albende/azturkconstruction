@@ -26,6 +26,11 @@ function Navbar() {
         <span className="bar"></span>
       </div>
       <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
+      <li>
+          <a href="#about" onClick={(e) => handleSmoothScroll(e, "about")}>
+            Haqqımızda
+          </a>
+        </li>
         <li>
           <a href="#services" onClick={(e) => handleSmoothScroll(e, "services")}>
             Xidmətlər
@@ -39,11 +44,6 @@ function Navbar() {
         <li>
           <a href="#testimonials" onClick={(e) => handleSmoothScroll(e, "testimonials")}>
             Rəylər
-          </a>
-        </li>
-        <li>
-          <a href="#about" onClick={(e) => handleSmoothScroll(e, "about")}>
-            Haqqımızda
           </a>
         </li>
         <li>
