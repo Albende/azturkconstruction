@@ -1,0 +1,186 @@
+/* General Reset and Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth; /* Smooth scroll between anchor links */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section Defaults */
+section {
+  padding: 60px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+section p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: #123552;
+  color: #fff;
+}
+
+.navbar a {
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* Section-Specific Animations (Using AOS Classes) */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://via.placeholder.com/1400x600") center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #ffcc00;
+  color: #123552;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: fadeInUp 1.4s ease-in-out;
+}
+
+.hero-button:hover {
+  transform: translateY(-5px);
+  background-color: #ffb000;
+}
+
+/* Smooth Animations for All Sections */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(50px);
+}
+
+[data-aos][data-aos-active] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Services Section */
+.services {
+  background-color: #fff;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-item {
+  flex: 1 1 300px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Section */
+.portfolio {
+  background-color: #f8f9fa;
+}
+
+.portfolio-item {
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #123552;
+  color: #fff;
+  padding: 20px 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
