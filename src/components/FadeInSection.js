@@ -1,4 +1,3 @@
-// src/components/FadeInSection.js
 import React, { useRef, useState, useEffect } from "react";
 import "./FadeInSection.css";
 
@@ -7,21 +6,21 @@ const FadeInSection = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const node = domRef.current; // Save domRef.current to a stable variable
     const observer = new IntersectionObserver((entries) => {
-      // We'll get only one entry since we're only observing domRef
       if (entries[0].isIntersecting) {
         setIsVisible(true);
-        // Once visible, we can unobserve so it doesn't toggle repeatedly
-        observer.unobserve(domRef.current);
+        observer.unobserve(node); // Use the stable node reference
       }
     });
 
-    if (domRef.current) {
-      observer.observe(domRef.current);
+    if (node) {
+      observer.observe(node);
     }
+
     // Cleanup
     return () => {
-      if (domRef.current) observer.unobserve(domRef.current);
+      if (node) observer.unobserve(node);
     };
   }, []);
 
