@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background: url("C:/Users/alben/Downloads/backgroundazturk.jpeg") center/cover no-repeat;
+  background: url("./assets/backgroundazturk.jpeg") center/cover no-repeat;
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
