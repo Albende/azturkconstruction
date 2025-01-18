@@ -11,7 +11,26 @@ body {
 .app {
   color: #fff; /* Default text color to ensure readability over the background */
 }
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+    max-width: 100%;
+  }
 
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .app {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+}
 /* General section styling for content */
 section {
   padding: 60px 20px;
