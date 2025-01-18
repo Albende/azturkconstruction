@@ -1,5 +1,5 @@
 .hero {
-    background: url("https://ricon.az/storage/menu/ejaZvQEzwdOmQmFAzU8zIRUFzq5lUjciIe4DcF8X.jpg") center/cover no-repeat;
+    /* background: url("C:\Users\alben\Downloads\backgroundazturk.jpeg") center/cover no-repeat; */
     min-height: 60vh; /* Reduce the height */
     display: flex;
     align-items: center;
@@ -16,7 +16,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Add a dark overlay for better contrast */
     z-index: 1; /* Place it behind text */
   }
   

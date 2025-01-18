@@ -1,11 +1,12 @@
 .contact {
     padding: 60px 20px;
-    background: #f7f7f7;
+    color: #fff;
   }
   
   .contact h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #ffcc00;
     margin-bottom: 40px;
   }
   
@@ -14,48 +15,54 @@
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
   }
   
-  .contact-info, .contact-form {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 6px;
+  .contact-info {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent for effect */
     padding: 20px;
-    flex: 1 1 300px;
-    min-width: 300px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
   }
   
   .contact-info h3 {
+    color: #ffcc00;
     margin-top: 0;
-    color: #083b66;
   }
   
-  .contact-form h3 {
-    margin-top: 0;
-    color: #083b66;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    width: 100%;
+  .contact-info p {
     margin-bottom: 15px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
   
-  .contact-form button {
-    background: #083b66;
-    color: #fff;
+  .whatsapp-button {
+    display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s;
+    background: #25d366; /* WhatsApp green */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
   }
   
-  .contact-form button:hover {
-    opacity: 0.85;
+  .whatsapp-button:hover {
+    background: #1ebe57; /* Darker green on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .contact-info {
+      text-align: center;
+    }
+  
+    .whatsapp-button {
+      display: block;
+      margin: 20px auto 0;
+    }
   }
   

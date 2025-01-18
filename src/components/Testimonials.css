@@ -1,11 +1,11 @@
 .testimonials {
     padding: 60px 20px;
-    background: #f7f7f7;
     text-align: center;
   }
   
   .testimonials h2 {
     font-size: 2rem;
+    color:#ffcc00;
     margin-bottom: 40px;
   }
   
@@ -19,8 +19,8 @@
   }
   
   .testimonial {
-    background: #fff;
-    border: 1px solid #eee;
+    /* background: #fff;
+    border: 1px solid #eee; */
     border-radius: 8px;
     padding: 20px;
     width: 100%;
@@ -35,7 +35,6 @@
   }
   
   .testimonial h4 {
-    color: #083b66;
+    color:#ffcc00;
     font-weight: normal;
   }
-  
