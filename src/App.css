@@ -19,7 +19,7 @@ body {
 @media (max-width: 768px) {
   body {
     background: url("./assets/mobileback.jpg") center/cover no-repeat;
-    background-attachment: fixed; /* Keep or remove as desired for mobile behavior */
+    background-attachment: scroll; /* Keep or remove as desired for mobile behavior */
   }
 
   section {
