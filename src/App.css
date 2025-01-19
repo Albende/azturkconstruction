@@ -11,7 +11,17 @@ body {
 .app {
   color: #fff; /* Default text color to ensure readability over the background */
 }
+
+/* 
+  MEDIA QUERY FOR MOBILE:
+  - Override the background image for screens up to 768px wide.
+*/
 @media (max-width: 768px) {
+  body {
+    background: url("./assets/mobileback.jpg") center/cover no-repeat;
+    background-attachment: fixed; /* Keep or remove as desired for mobile behavior */
+  }
+
   section {
     padding: 20px;
     max-width: 100%;
@@ -28,9 +38,10 @@ body {
   }
 
   .app {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
   }
 }
+
 /* General section styling for content */
 section {
   padding: 60px 20px;
@@ -80,7 +91,7 @@ footer {
   color: #fff;
 }
 
-/* Add fade-in animation for FadeInSection */
+/* FadeInSection (if using it) */
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
