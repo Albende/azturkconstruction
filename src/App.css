@@ -6,12 +6,6 @@ body {
   background: url("./assets/backgroundazturk.jpeg") center/cover no-repeat;
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-size: cover; /* Ensures proportional scaling */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  
 }
 
 .app {
