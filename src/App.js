@@ -1,53 +1,49 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import TrustSignals from "./components/TrustSignals";
+import About from "./components/About";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import FadeInSection from "./components/FadeInSection"; // Import FadeInSection
-import "./App.css"; // Import updated CSS
+import FloatingCTA from "./components/FloatingCTA";
+import StickyMobileCTA from "./components/StickyMobileCTA";
 
 function App() {
   return (
-    <div className="app">
+    <div className="min-h-screen bg-navy-900">
+      {/* Navigation */}
       <Navbar />
+
+      {/* Hero Section */}
       <Hero />
 
-      {/* Wrap sections with FadeInSection for animations */}
-      {/* <FadeInSection>
-        <section id="about"> */}
-          <About />
-        {/* </section>
-      </FadeInSection> */}
-{/* 
-      <FadeInSection>
-        <section id="services"> */}
-          <Services />
-        {/* </section>
-      </FadeInSection> */}
-{/* 
-      <FadeInSection>
-        <section id="portfolio"> */}
-          <Portfolio />
-        {/* </section>
-      </FadeInSection> */}
+      {/* Trust Signals - After Hero */}
+      <TrustSignals />
 
-      {/* <FadeInSection>
-        <section id="testimonials"> */}
-          <Testimonials />
-        {/* </section>
-      </FadeInSection> */}
+      {/* About Section */}
+      <About />
 
-      {/* <FadeInSection>
-        <section id="contact"> */}
-          <Contact />
-        {/* </section>
-      </FadeInSection> */}
+      {/* Services Section */}
+      <Services />
 
+      {/* Portfolio Section */}
+      <Portfolio />
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* Contact Section */}
+      <Contact />
+
+      {/* Footer */}
       <Footer />
+
+      {/* Lead Generation Components */}
+      <FloatingCTA />
+      <StickyMobileCTA />
     </div>
   );
 }
